@@ -11,7 +11,6 @@ import (
 
 func BatchPayments(funds string, payments string) string {
 	availableFunds := helpers.ParseAvailableFunds(funds)
-
 	paymentsToMake := helpers.ParsePayments(payments)
 
 	helpers.DeductFees(paymentsToMake)
