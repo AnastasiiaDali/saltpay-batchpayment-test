@@ -8,10 +8,10 @@ import (
 
 type AvailableFunds map[models.Currency]float64
 
-func ParseAvailableFunds(s string) AvailableFunds {
+func ParseAvailableFunds(funds string) AvailableFunds {
 	availableFunds := make(AvailableFunds)
-	for _, item := range strings.Split(s, ",") {
-		parts := strings.Split(item, ":")
+	for _, fund := range strings.Split(funds, ",") {
+		parts := strings.Split(fund, ":")
 		currency := models.Currency(parts[0])
 		if !IsSupportedCurrency(currency) {
 			continue

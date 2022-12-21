@@ -6,9 +6,9 @@ import (
 	"strings"
 )
 
-func ParsePayments(s string) []models.Payment {
+func ParsePayments(allPayments string) []models.Payment {
 	var payments []models.Payment
-	for _, payment := range strings.Split(s, "\n") {
+	for _, payment := range strings.Split(allPayments, "\n") {
 		if payment == "" {
 			continue
 		}
