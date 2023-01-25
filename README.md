@@ -55,3 +55,4 @@ If there are no batches for a given currency, please do not include the currency
 3. All amounts will be positive numbers
 4. Feel free to use your own editor/IDE and then paste the output into HackerRank
 5. You can submit the code and run the tests as many times as you like. There are some test cases you can’t see the test data for, so consider edge cases when you see these fail
+
